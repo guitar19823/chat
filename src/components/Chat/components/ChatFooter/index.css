@@ -1,0 +1,85 @@
+.ChatFooter {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 0 0 20px 20px;
+  color: #b6b7b8;
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 20px;
+}
+
+.ChatFooter_default {
+  width: calc(100% - 40px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.ChatFooter_default > p {
+  width: 100%;
+  text-align: center;
+}
+
+.ChatFooter input {
+  width: calc(100% - 40px);
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-right: 10px;
+  background: rgba(0, 0, 0, .2);
+  color: #b6b7b8;
+}
+
+.ChatFooter input,
+.ChatFooter input:focus,
+.ChatFooter input:active {
+  border: none;
+  outline: none;
+}
+
+.ChatFooter_smile {
+  border: 1.5px solid #b6b7b8;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChatFooter_smile > div {
+  border-top: 1.5px solid transparent;
+  border-bottom: 1.5px solid #b6b7b8;
+  border-left: 1.5px solid transparent;
+  border-right: 1.5px solid transparent;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  position: relative;
+}
+
+.ChatFooter_smile > div::before,
+.ChatFooter_smile > div::after {
+  position: absolute;
+  top: 1px;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 3px;
+  border-radius: 50%;
+  background: #b6b7b8;
+}
+
+.ChatFooter_smile > div::before {
+  left: .5px;
+}
+
+.ChatFooter_smile > div::after {
+  right: .5px;
+}

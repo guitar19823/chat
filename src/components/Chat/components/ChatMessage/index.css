@@ -1,0 +1,72 @@
+.ChatMessage_left,
+.ChatMessage_right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.ChatMessage_right {
+  flex-direction: row-reverse;
+}
+
+.ChatMessage_message-wrapper {
+  padding: 10px 10px 10px 10px;
+  max-width: 270px;
+}
+
+.ChatMessage_left .ChatMessage_message-wrapper {
+  background: #fff;
+  border-radius: 20px 20px 20px 0;
+}
+
+.ChatMessage_right .ChatMessage_message-wrapper {
+  border-radius: 20px 20px 0 20px;
+  background-color: #23b838;
+}
+
+.ChatMessage_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ChatMessage_header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChatMessage_avatar {
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.ChatMessage_name {
+  color: #a9afb8;
+  margin-right: 5px;
+}
+
+.ChatMessage_level {
+  color: #23b838;
+  margin-right: 5px;
+}
+
+.ChatMessage_main {
+  word-wrap: break-word;
+}
+
+.ChatMessage_left .ChatMessage_main {
+  color: #464646;
+}
+
+.ChatMessage_right .ChatMessage_main {
+  color: #fff;
+}
+
+.ChatMessage_time {
+  color: #a9afb8;
+  margin: 0 10px;
+}

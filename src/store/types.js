@@ -1,0 +1,5 @@
+export const SET_SHOW_CHAT = 'SET_SHOW_CHAT';
+export const SET_CHAT_LANGUAGE = 'SET_CHAT_LANGUAGE';
+export const SET_CHAT_ACTIVE_PAGE = 'SET_CHAT_ACTIVE_PAGE';
+export const SET_MESSAGE = 'SET_MESSAGE';
+export const SET_LOADING = 'SET_LOADING';

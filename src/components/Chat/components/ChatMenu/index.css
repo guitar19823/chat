@@ -1,0 +1,71 @@
+.ChatMenu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.ChatMenu_button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.ChatMenu_button > div {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #b6b7b8;
+}
+
+.ChatMenu_list_left,
+.ChatMenu_list_bottom-left,
+.ChatMenu_list_right {
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px -10px #454545;
+}
+
+.ChatMenu_list_left {
+  top: -15px;
+  right: 70%;
+}
+
+.ChatMenu_list_bottom-left {
+  top: 100%;
+  right: -10px;
+}
+
+.ChatMenu_list_right {
+  top: -15px;
+  left: 70%;
+}
+
+.ChatMenu_list_bottom-right {
+  top: 100%;
+  left: -10px;
+}
+
+.ChatMenu_list_left li,
+.ChatMenu_list_bottom-left li,
+.ChatMenu_list_right li,
+.ChatMenu_list_bottom-right {
+  white-space: nowrap;
+  list-style: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: #464646;
+}
+
+.ChatMenu_list_left li:last-child,
+.ChatMenu_list_bottom-left li:last-child,
+.ChatMenu_list_right li:last-child,
+.ChatMenu_list_bottom-right li:last-child {
+  margin-bottom: 0;
+}

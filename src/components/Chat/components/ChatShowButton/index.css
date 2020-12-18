@@ -1,0 +1,42 @@
+.ChatShowButton {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #23b838;
+  box-shadow: 0 0 5px #1e9d2f, inset 0 0 10px #1e9d2f;
+  cursor: pointer;
+  transition: all .25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChatShowButton:hover {
+  box-shadow: 0 0 15px #1e9d2f, inset 0 0 10px #1e9d2f;
+  transform: scale(1.05);
+}
+
+.ChatShowButton::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 15px;
+  border: 2px solid #b7fec1;
+  border-radius: 3px;
+}
+
+.ChatShowButton::after {
+  position: absolute;
+  top: 10px;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-left: 2px solid #b7fec1;
+  border-bottom: 2px solid #b7fec1;
+  border-radius: 0 0 0 3px;
+  transform: rotateZ(-45deg);
+}

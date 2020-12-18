@@ -1,0 +1,72 @@
+.ChangeLanguage {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.ChangeLanguage_active-language {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active-language_name {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 5px;
+  color: #f5f5f5;
+}
+
+.active-language_arrow {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  margin: 0 0 3px 3px;
+  transform: rotateZ(-45deg);
+}
+
+.active-language_arrow::before,
+.active-language_arrow::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: #b6b7b8;
+}
+
+.active-language_arrow::before {
+  border-radius: 1px 1px 0 0;
+  left: 0;
+  width: 2px;
+  height: 9px;
+}
+
+.active-language_arrow::after {
+  border-radius: 0 1px 1px 0;
+  bottom: 0;
+  width: 9px;
+  height: 2px;
+}
+
+.ChangeLanguage_list {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+  list-style: none;
+  background: #232829;
+  padding: 15px 15px 7px;
+}
+
+.ChangeLanguage_list-item {
+  color: #b6b7b8;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.ChangeLanguage_list-item:last-child {
+  margin-bottom: 0;
+}

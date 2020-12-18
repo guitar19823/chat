@@ -1,0 +1,22 @@
+.Chat {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  width: 350px;
+  height: 400px;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 20px;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.Chat ::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+}
+
+.Chat ::-webkit-scrollbar-thumb {
+  background: #00222b;
+  border-radius: 2px;
+}

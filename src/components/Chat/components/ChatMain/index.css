@@ -1,0 +1,6 @@
+.ChatMain {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 80px);
+  top: 40px;
+}
